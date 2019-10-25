@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Notes on Views id
+et = EditText
+sv = ScrollView
+rb = RadioButton
+cb = CheckBox
+btn = Button
+ -->
+<ScrollView
+    android:id="@+id/app_root_view_sv"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <!-- questions container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+       android:padding="16dp"
+        android:background="@android:color/white">
+        <!-- question #01 -->
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="5dp"
+            android:elevation="5dp"
+            android:layout_marginBottom="16dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/cardViewBackground"
+                android:padding="8dp"
+                android:orientation="vertical">
+                <!-- Question #01 Text -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/qs1_text"
+                    style="@style/questionText"/>
+                <!-- Question #01 answer -->
+                <!-- Team #1 name -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_layout_team1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/question_1_answer_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="monospace"
+                        android:hint="@string/qs1_answer_input_hint"
+                        android:maxLines="1"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <!-- question #01 -->
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="5dp"
+            android:elevation="5dp"
+            android:layout_marginBottom="16dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/cardViewBackground"
+                android:padding="8dp"
+                android:orientation="vertical">
+                <!-- Question #01 Text -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/qs2"
+                    style="@style/questionText"/>
+                <!-- Question #01 answers -->
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!-- Answer #01 -->
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/qs2_answer1"
+                        style="@style/questionAnswer"/>
+                    <!-- Answer #02 -->
+                    <RadioButton
+                        android:id="@+id/question_2_correct_answer_rb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/qs2_answer2"
+                        style="@style/questionAnswer"/>
+                    <!-- Answer #03 -->
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/qs2_answer3"
+                        style="@style/questionAnswer"/>
+                    <!-- Answer #04 -->
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/qs2_answer4"
+                        style="@style/questionAnswer"/>
+                </RadioGroup>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <!-- question #03 -->
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="5dp"
+            android:elevation="5dp"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/cardViewBackground"
+                android:orientation="vertical"
+                android:padding="8dp">
+                <!-- Question #01 Text -->
+                <TextView
+                    style="@style/questionText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/qs3" />
+                <!-- Question #01 answers -->
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!-- Answer #01 -->
+                    <RadioButton
+                        style="@style/questionAnswer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/qs3_answer1" />
+                    <!-- Answer #02 -->
+                    <RadioButton
+                        style="@style/questionAnswer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/qs3_answer2" />
+                    <!-- Answer #03 -->
+                    <!-- Answer #04 -->
+                    <RadioButton
+                        android:id="@+id/question_3_correct_answer_rb"
+                        style="@style/questionAnswer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/qs3_answer3" />
+
+                    <RadioButton
+                        style="@style/questionAnswer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/qs3_answer4" />
+                </RadioGroup>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <!-- question #03 -->
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="5dp"
+            android:elevation="5dp"
+            android:layout_marginBottom="16dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/cardViewBackground"
+                android:padding="8dp"
+                android:orientation="vertical">
+                <!-- Question #01 Text -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/qs4"
+                    style="@style/questionText" />
+                <!-- Question #01 answers -->
+                <CheckBox
+                    android:id="@+id/question_4_wrong_answer_1_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qs4_answer1"
+                    style="@style/questionAnswer" />
+                <CheckBox
+                    android:id="@+id/question_4_correct_answer_1_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qs4_answer2"
+                    style="@style/questionAnswer" />
+                <CheckBox
+                    android:id="@+id/question_4_wrong_answer_2_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qs4_answer3"
+                    style="@style/questionAnswer" />
+                <CheckBox
+                    android:id="@+id/question_4_correct_answer_2_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qs4_answer4"
+                    style="@style/questionAnswer" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/submit_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_submit"
+            android:fontFamily="monospace"
+            android:textSize="@dimen/submitBtnTextSize"/>
+    </LinearLayout>
+</ScrollView>

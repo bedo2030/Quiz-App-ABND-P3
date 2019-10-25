@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">CS Quiz</string>
+    <string name="qs2">2- A computer assisted method for the recording and analyzing of existing or hypothetical systems is</string>
+    <string name="qs1_text">1- To avoid the race condition, the number of processes that may be simultaneously inside their critical section is</string>
+    <string name="qs3">3- The brain of any computer system is</string>
+    <string name="qs4">4- Which of the following computer language is used for artificial intelligence? (Select Two Answers)</string>
+    <string name="qs1_answer_input_hint">Type your answer</string>
+    <string name="qs2_answer1">A. Data transmission.</string>
+    <string name="qs2_answer2">B. Data flow.</string>
+    <string name="qs2_answer3">C. Data processing.</string>
+    <string name="qs2_answer4">D. None of the above.</string>
+    <string name="qs3_answer1">A. Memory.</string>
+    <string name="qs3_answer2">B. ALU.</string>
+    <string name="qs3_answer3">C. CPU.</string>
+    <string name="qs3_answer4">D. None of the above.</string>
+    <string name="qs4_answer1">A. FORTRAN.</string>
+    <string name="qs4_answer2">B. PROLOG.</string>
+    <string name="qs4_answer3">C. COBOL.</string>
+    <string name="qs4_answer4">D. Lisp.</string>
+    <string name="btn_submit">Submit</string>
+</resources>
